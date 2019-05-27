@@ -1192,7 +1192,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168946295}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a0a7f51946512b4591a7b6c092891d6, type: 3}
   m_Name: 
@@ -1219,10 +1219,33 @@ MonoBehaviour:
   characterName: Adventurer
   charClass: 0
   charRace: 0
-  tempStats: 
-  stats: 
-  statNames: []
+  selectedClass:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  tempStats: 000000000000000000000000000000000000000000000000
+  stats: 000000000000000000000000000000000000000000000000
+  statNames:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   points: 0
+  statArray:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  selectedIndex: 0
 --- !u!4 &168946297
 Transform:
   m_ObjectHideFlags: 0
@@ -10538,7 +10561,6 @@ GameObject:
   - component: {fileID: 1466148322}
   - component: {fileID: 1466148321}
   - component: {fileID: 1466148320}
-  - component: {fileID: 1466148326}
   - component: {fileID: 1466148319}
   - component: {fileID: 1466148324}
   - component: {fileID: 1466148323}
@@ -10680,30 +10702,6 @@ MonoBehaviour:
   sensitivityY: 15
   minY: -60
   maxY: 60
---- !u!114 &1466148326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466148318}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34806cb4d00e8c44893c00b39dfd6ff2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxHealth: 12
-  curHealth: 12
-  heartSlots:
-  - {fileID: 1056049643}
-  - {fileID: 842546510}
-  - {fileID: 1606350451}
-  hearts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &1466148327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10711,7 +10709,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466148318}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3a2d1d122975814f919d08c9ba053b3, type: 3}
   m_Name: 
@@ -16731,6 +16729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1532867641146077979}
   - component: {fileID: 1532867641153494209}
+  - component: {fileID: 1532867641146109820}
   m_Layer: 0
   m_Name: Warrior
   m_TagString: Untagged
@@ -16738,6 +16737,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1532867641146109820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532867641146109819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f17c79153eb8743838be86ab7822d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scr: {x: 0, y: 0}
+  scrollPos: {x: 0, y: 0}
+  sortType: []
+  selectedType: 
+  equippedLocations:
+  - {fileID: 1532867641146077963}
+  - {fileID: 1532867641146077995}
+  dropLocation: {fileID: 1532867641146077963}
+  currentWeapon: {fileID: 0}
+  currentHelmet: {fileID: 0}
+  health: {fileID: 1466148327}
 --- !u!95 &1532867641153494209
 Animator:
   serializedVersion: 3

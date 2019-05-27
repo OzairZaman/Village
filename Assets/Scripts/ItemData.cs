@@ -82,8 +82,8 @@ public static class ItemData
                 name = "Sword";
                 value = 5;
                 description = "Munchy And Curnchy";
-                icon = "Weapon/Berries_Icon";
-                mesh = "Weapon/Berries_Mesh";
+                icon = "Weapon/Sword_Icon";
+                mesh = "Weapon/Sword_Mesh";
                 type = ItemType.Weapon;
                 damage = 5;
                 amount = 1;
@@ -201,7 +201,7 @@ public static class ItemData
                 description = "Munchy And Curnchy";
                 icon = "Ingredient/Mushroom_Icon";
                 mesh = "Ingredient/Mushroom_Mesh";
-                type = ItemType.Ingredient;
+                type = ItemType.Ingredients;
                 amount = 1;
                 break;
 
@@ -211,7 +211,7 @@ public static class ItemData
                 description = "Munchy And Curnchy";
                 icon = "Ingredient/Roots_Icon";
                 mesh = "Ingredient/Roots_Mesh";
-                type = ItemType.Ingredient;
+                type = ItemType.Ingredients;
                 amount = 1;
                 break;
 
@@ -221,7 +221,7 @@ public static class ItemData
                 description = "Munchy And Curnchy";
                 icon = "Ingredient/Herbs_Icon";
                 mesh = "Ingredient/Herbs_Mesh";
-                type = ItemType.Ingredient;
+                type = ItemType.Ingredients;
                 amount = 1;
                 break;
             #endregion

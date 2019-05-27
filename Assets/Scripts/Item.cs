@@ -125,7 +125,7 @@ public enum ItemType
     Crafting,
     Quest,
     Money,
-    Ingredient,
+    Ingredients,
     Potion,
     Scroll
 }
