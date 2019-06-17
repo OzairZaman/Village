@@ -16,13 +16,14 @@ public class CustomisationSave
     public CustomisationSave(CustomisationSet player)
     {
         skinIndex = player.skinIndex;
-        charClass = player.charClass.ToString();
-        charRace = player.charRace.ToString();
+        charClass = player.charClass.ToString(); //this is an enum type
+        charRace = player.charRace.ToString(); //this is an enum type
         hairIndex = player.hairIndex;
         eyesIndex = player.eyesIndex;
         mouthIndex = player.mouthIndex;
         clothesIndex = player.clothesIndex;
         armourIndex = player.armourIndex;
+        characterName = player.characterName;
 
         for (int i = 0; i < 6; i++)
         {

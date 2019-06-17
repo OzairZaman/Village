@@ -7,10 +7,11 @@ public static class SaveCustomSet
     public static void CustomisationSet(CustomisationSet player)
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/CustomisationSet";
+        string path = Application.persistentDataPath + "/shitWeSaved";
         FileStream stream = new FileStream(path, FileMode.Create);
         CustomisationSave customSave = new CustomisationSave(player);
         formatter.Serialize(stream, customSave);
+        Debug.Log("Saved?? -- " + path);
         stream.Close();
 
     }
