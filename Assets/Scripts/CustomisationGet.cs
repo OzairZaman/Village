@@ -27,6 +27,7 @@ public class CustomisationGet : MonoBehaviour
         //if it doesnt then load the CustomSet level
         //if it does have a save file then load and SetTexture Skin, Hair, Mouth and Eyes from binary
         //grab the gameObject in scene that is our character and set its Object name to the Characters name
+        
     }
 
     #endregion
